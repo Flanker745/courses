@@ -1,0 +1,1 @@
+<option class="w-3/4 bg-neutral-200 ps-3 py-1 rounded" value={{ $value }}>{{ $slot }}</option>

@@ -1,0 +1,1 @@
+<img {{ $attributes }} class="w-full h-full rounded">
