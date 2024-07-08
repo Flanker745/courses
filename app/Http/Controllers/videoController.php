@@ -7,9 +7,9 @@ use Illuminate\Http\Request;
 class videoController extends Controller
 {
     public function create(){
-        return view('welcome');
+        return view('video.create');
     }
     public function show(){
-        return view('welcome');
+        return view('video.show');
     }
 }

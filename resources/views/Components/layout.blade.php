@@ -26,7 +26,7 @@
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script>
-    $(".gallary").click(function() {
+    $(".gallery").click(function() {
         var abc = $(this).next()
         $(".gallery2").not(abc).hide(300);
         abc.toggle(300);

@@ -11,12 +11,16 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/about',[aboutController::class , "show"] );
+Route::patch("/about",[aboutController::class , "update"] );
 
-Route::get('/gallaryC',[galleryController::class , "create"] );
-Route::get('/gallaryS',[galleryController::class , "show"] );
+Route::get('/galleryC',[galleryController::class , "create"] );
+Route::get('/galleryS',[galleryController::class , "show"] );
 
 Route::get('/courseC',[courseController::class , "create"] );
 Route::get('/courseS',[courseController::class , "show"] );
+Route::post("/course" ,[courseController::class , "store"] );
+Route::get('/course/{id}' ,[courseController::class , "status"]  );
+Route::get('/courses/{id}' ,[courseController::class , "create"]  );
 
 Route::get('/videoC',[videoController::class , "create"] );
 Route::get('/videoS',[videoController::class , "show"] );
